@@ -115,7 +115,7 @@ nav {
 }
 /* HERO SECTION STYLES */
 .hero-section {
-  max-width: 95%;
+  max-width: 85%;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   justify-content: center;
@@ -124,7 +124,7 @@ nav {
   gap: 8rem;
 }
 .main-h1 {
-  font-size: 4.4rem;
+  font-size: 3.4rem;
   font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 2.5rem;
@@ -141,7 +141,7 @@ nav {
   background-color: var(--softblue);
   padding: 1.2rem 1.2rem;
   border-radius: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   transition: 0.25s ease-in-out;
 }
 .hero--btn {
@@ -204,5 +204,17 @@ nav {
 }
 /* features col styles */
 .features-2-col {
-  gap: 12rem;
+  max-width: 80%;
+  margin: 0 auto;
+  gap: 15rem;
+}
+.features-h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 2.8rem;
+}
+.features-third-paragraph {
+  font-size: 2.2rem;
+  opacity: 0.8;
+  margin-bottom: 3rem;
 }
