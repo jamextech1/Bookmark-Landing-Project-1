@@ -50,6 +50,7 @@ body {
   font-size: 2rem;
   font-family: "Rubik";
   color: var(--darkblue);
+  margin-bottom: 12rem;
 }
 img {
   width: 100%;
@@ -66,6 +67,10 @@ img {
 }
 /* END GENERAL STYLES */
 
+/* header */
+header {
+  margin-bottom: 19.2rem !important;
+}
 /* nav styling */
 nav {
   max-width: 90%;
@@ -155,4 +160,49 @@ nav {
 }
 .second--btn:hover {
   box-shadow: 0 0 0 0.2rem var(--darkblue);
+}
+/* FEATURES SECTION */
+.features-h1 {
+  font-size: 3.8rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.features-first-paragraph {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+.features-second-paragraph {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.features-second-paragraph a {
+  text-decoration: none;
+  color: var(--darkblue);
+  opacity: 0.9;
+  padding: 0 4rem;
+  transition: 0.25s ease-in-out;
+}
+.features-second-paragraph a:hover {
+  color: var(--softred);
+}
+.line {
+  margin: 0 auto;
+  height: 0.2rem;
+  width: 50%;
+  background-color: var(--darkblue);
+  opacity: 0.6;
+  margin-bottom: 8rem;
+}
+.first-line {
+  height: 0.35rem;
+  width: 30%;
+  background-color: var(--softred);
+}
+/* features col styles */
+.features-2-col {
+  gap: 12rem;
 }
