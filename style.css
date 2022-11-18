@@ -1,0 +1,140 @@
+/* 
+
+MEDIA QUERIES BREAKPOINTS TO USE: 
+992PX,
+
+768PX,
+
+576PX, 
+
+480PX AND 
+
+375PX
+
+*/
+
+/* 
+
+COLORS:
+
+rgb(255, 255, 255)
+
+hsl(229, 31%, 21%)
+
+hsl(229, 8%, 60%)
+
+hsl(0, 94%, 66%)
+
+hsl(231, 69%, 60%)
+
+*/
+
+/* GENERAL STYLES */
+:root {
+  --softblue: hsl(231, 69%, 60%);
+  --softred: hsl(0, 94%, 66%);
+  --darkblue: hsl(229, 31%, 21%);
+  --grey: hsl(229, 8%, 60%);
+  --light: #f7f7f7;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+body {
+  font-size: 2rem;
+  font-family: "Rubik";
+  color: var(--darkblue);
+}
+img {
+  width: 100%;
+}
+.section {
+  max-width: 95%;
+  margin: 0 auto;
+}
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+/* END GENERAL STYLES */
+
+/* nav styling */
+nav {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 0;
+  margin-bottom: 5rem;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  width: 18rem;
+}
+
+/* toggler */
+.toggler {
+  display: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  padding: 0 1.2rem;
+  color: var(--darkblue);
+}
+.nav-links .nav-active {
+  background-color: var(--softred);
+  color: var(--light);
+  border-radius: 0.8rem;
+  padding: 1rem 2rem;
+  margin-left: 4rem;
+}
+/* HERO SECTION STYLES */
+.hero-section {
+  max-width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  justify-content: center;
+  justify-items: start;
+  align-items: center;
+  gap: 8rem;
+}
+.main-h1 {
+  font-size: 4.4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 2.5rem;
+}
+.main-paragraph {
+  font-size: 2rem;
+  opacity: 0.8;
+  margin-bottom: 2.3rem;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--light);
+  background-color: var(--softblue);
+  padding: 1.2rem 1.2rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+}
+.hero--btn {
+  display: flex;
+  gap: 1.5rem;
+}
+.second--btn {
+  background-color: #f7f7f7;
+  color: var(--grey);
+  box-shadow: 0 0.3rem 1.2rem var(--grey);
+}
