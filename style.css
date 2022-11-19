@@ -220,6 +220,9 @@ nav {
   margin-bottom: 3rem;
 }
 /* DOWNLOAD SECTION STYLES */
+.download-section {
+  margin-bottom: 15rem;
+}
 .download-context {
   margin: 0 auto;
   max-width: 60%;
@@ -267,4 +270,51 @@ nav {
 }
 .dot-img {
   margin-bottom: 3rem;
+}
+.download--btn:hover {
+  background-color: var(--light);
+  color: var(--softblue);
+  box-shadow: 0 0 0 0.15rem var(--softblue);
+}
+
+/* FAQs SECTION STYLES */
+.faq-context {
+  text-align: center;
+  width: 45%;
+  margin: 0 auto;
+  margin-bottom: 8rem;
+}
+.faq-h1 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.faq-container {
+  width: 48%;
+  margin: 0 auto;
+  border-top: 0.18rem solid var(--grey);
+  padding-top: 2rem;
+}
+.faq--one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 0.18rem var(--grey);
+  padding-bottom: 2rem;
+  cursor: pointer;
+}
+.faq-second-paragraph,
+.faq-icon {
+  font-size: 2.2rem;
+}
+.faq-icon {
+  color: var(--softblue);
+}
+.faq-answer {
+  margin-top: 4rem;
+  display: none;
+}
+.faq-btn-container {
+  text-align: center;
+  margin-top: 2.5rem;
 }
