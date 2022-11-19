@@ -290,6 +290,9 @@ nav {
   margin-bottom: 2rem;
 }
 .faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   width: 48%;
   margin: 0 auto;
   border-top: 0.18rem solid var(--grey);
@@ -316,5 +319,8 @@ nav {
 }
 .faq-btn-container {
   text-align: center;
-  margin-top: 2.5rem;
+  margin-top: 4rem;
+}
+.faq--btn {
+  padding: 1.8rem 2rem;
 }
