@@ -52,6 +52,7 @@ body {
   font-size: 2rem;
   font-family: "Rubik";
   color: var(--darkblue);
+  overflow-x: hidden;
 }
 img {
   width: 100%;
@@ -117,7 +118,7 @@ nav {
   align-items: center;
 }
 .main-context {
-  max-width: 40%;
+  max-width: 50%;
 }
 .main-h1 {
   font-size: 4.4rem;
@@ -158,7 +159,7 @@ nav {
   box-shadow: 0 0 0 0.2rem var(--darkblue);
 }
 .hero-section-img {
-  width: 50%;
+  max-width: 50%;
 }
 /* FEATURES SECTION */
 .features-section {
@@ -277,7 +278,7 @@ nav {
 }
 .faq-context {
   text-align: center;
-  width: 45%;
+  max-width: 45%;
   margin: 0 auto;
   margin-bottom: 8rem;
 }
@@ -290,7 +291,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 48%;
+  max-width: 48%;
   margin: 0 auto;
   border-top: 0.18rem solid var(--grey);
   padding-top: 2rem;
@@ -362,7 +363,7 @@ nav {
 .display-h2 {
   font-size: 3.8rem;
   font-weight: 500;
-  width: 40%;
+  max-width: 40%;
   margin: 0 auto;
   margin-bottom: 4rem;
 }
@@ -394,7 +395,7 @@ input {
   color: var(--light);
 }
 .footer-wrap {
-  width: 80%;
+  max-width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -414,7 +415,7 @@ input {
 .footer-links a:link {
   color: var(--light);
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.8rem !important;
   font-size: 2.4rem;
   transition: 0.25s ease-in-out;
 }
@@ -427,6 +428,141 @@ input {
   gap: 3rem;
 }
 .second-col i {
-  font-size: 3rem;
+  font-size: 2.5rem;
   transition: 0.25s ease-in-out;
+}
+/*  */
+/*  */
+/* 
+
+MEDIA QUERIES
+
+/* 
+
+MEDIA QUERIES BREAKPOINTS TO USE: 
+992PX,
+
+768PX,
+
+576PX, 
+
+480PX AND 
+
+375PX
+
+*/
+
+/*  */
+/*  */
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 50.2%;
+  }
+  nav {
+    padding-right: 5rem;
+  }
+  .download-cols {
+    max-width: 95%;
+  }
+  .faq-container {
+    max-width: 58%;
+  }
+  .features-2-col {
+    gap: 8rem;
+  }
+}
+
+/*  */
+/* second break point */
+/*  */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 40.8%;
+  }
+  nav {
+    padding-right: 4.5rem;
+  }
+  .features-2-col {
+    gap: 5rem;
+  }
+}
+/*  */
+/* third breakpoint */
+/*  */
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 62.5%;
+  }
+  .nav-links {
+    display: none;
+  }
+  .hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .main-context {
+    max-width: 90%;
+  }
+  .main-h1 {
+    font-size: 3.2rem;
+  }
+  .main-paragraph {
+    font-size: 1.8rem;
+  }
+  .hero--btn {
+    justify-content: center;
+  }
+  .hero-section-img {
+    max-width: 90%;
+  }
+  .features-h1 {
+    font-size: 3.2rem;
+  }
+  .features-first-paragraph {
+    font-size: 1.8rem;
+  }
+  .features-second-paragraph {
+    flex-direction: column;
+    gap: 2.4rem;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+  }
+  .features-2-col {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .download-context {
+    max-width: 90%;
+  }
+  .download-first-paragraph {
+    margin-bottom: 6rem;
+  }
+  .download-cols {
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .faq-context {
+    max-width: 90%;
+  }
+  .faq-container {
+    font-size: 1.8rem;
+    max-width: 90%;
+  }
+  .display-h1 {
+    letter-spacing: 0.2rem;
+  }
+  .display-h2 {
+    max-width: 90%;
+  }
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-wrap {
+    max-width: 90%;
+    display: grid;
+  }
 }
