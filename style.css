@@ -89,11 +89,6 @@ nav {
   cursor: pointer;
 }
 
-/* toggler */
-.toggler {
-  display: none;
-}
-
 .nav-links a {
   text-decoration: none;
   padding: 0 1.2rem;
@@ -179,7 +174,7 @@ nav {
   text-align: center;
   font-size: 2rem;
   font-weight: 400;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   opacity: 0.9;
 }
 .features-second-paragraph {
@@ -300,11 +295,11 @@ nav {
   border-top: 0.18rem solid var(--grey);
   padding-top: 2rem;
 }
+
 .faq--one {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: solid 0.18rem var(--grey);
   padding-bottom: 2rem;
   cursor: pointer;
 }
@@ -312,13 +307,34 @@ nav {
 .faq-icon {
   font-size: 2.2rem;
 }
+.faq-second-paragraph:hover {
+  color: var(--softred);
+}
+
 .faq-icon {
   color: var(--softblue);
 }
+
 .faq-answer {
-  margin-top: 4rem;
+  margin-top: 3rem;
   display: none;
+  margin-bottom: 4rem;
 }
+
+.faq-one {
+  border-bottom: solid 0.18rem var(--grey);
+}
+
+.faq-answer-show .faq-answer {
+  display: block;
+}
+
+.faq-icon-rotate-up .faq-icon {
+  transform: rotate(180deg);
+  transition: 0.25s ease;
+  color: var(--softred);
+}
+
 .faq-btn-container {
   text-align: center;
   margin-top: 4rem;
