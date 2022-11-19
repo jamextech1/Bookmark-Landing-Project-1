@@ -52,7 +52,6 @@ body {
   font-size: 2rem;
   font-family: "Rubik";
   color: var(--darkblue);
-  margin-bottom: 12rem;
 }
 img {
   width: 100%;
@@ -371,4 +370,47 @@ input {
   background-color: var(--light);
   color: var(--softred);
   box-shadow: 0 0 0 0.1rem var(--softred);
+}
+/* FOOTER SECTION STYLES */
+.footer-section {
+  padding: 5rem 0;
+  background-color: var(--darkblue);
+  color: var(--light);
+}
+.footer-wrap {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.first-col,
+.footer {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+.footer-links {
+  display: flex;
+  gap: 3rem;
+}
+.footer-links a:visited,
+.footer-links a:link {
+  color: var(--light);
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-size: 2.4rem;
+  transition: 0.25s ease-in-out;
+}
+.footer-links a:hover,
+.second-col i:hover {
+  color: var(--softred);
+}
+.second-col {
+  display: flex;
+  gap: 3rem;
+}
+.second-col i {
+  font-size: 3rem;
+  transition: 0.25s ease-in-out;
 }
