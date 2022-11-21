@@ -26,9 +26,9 @@
             <img src="images/footer-logo.svg" alt="" class="toggler-img" />
             <img src="images/icon-close.svg" alt="" class="hamburger-close" />
           </div>
-          <a href="#">Features</a>
-          <a href="#">Pricing</a>
-          <a href="#">Contact</a>
+          <a href="#features-nav">Features</a>
+          <a href="#pricing-nav">Pricing</a>
+          <a href="#contact-nav">Contact</a>
           <a href="#" class="nav-active">Login</a>
           <div class="toggler-media">
             <i class="fab fa-facebook toggle-facebook"></i>
@@ -62,7 +62,7 @@
     </header>
     <!-- FEATURES SECTION -->
     <section class="section features-section">
-      <h1 class="features-h1">Features</h1>
+      <h1 id="features-nav" class="features-h1">Features</h1>
       <p class="features-first-paragraph">
         Our aim is to make it quick and easy for you to access your <br />
         favourite websites. Your bookmark sync between your devices <br />
@@ -94,7 +94,7 @@
     <!-- DOWNLOAD EXTENSION SECTION -->
     <section class="section download-section">
       <div class="download-context">
-        <h1 class="download-h1">Download the extension</h1>
+        <h1 id="pricing-nav" class="download-h1">Download the extension</h1>
         <p class="download-first-paragraph">
           We've got more broswers in the pipeline. Please do let us know if
           you've got a favourite you'd like us to prioritize.
@@ -230,7 +230,7 @@
             required=""
             placeholder="Enter your email address"
           />
-          <a href="#" class="btn display--btn">Contact Us</a>
+          <a id="contact-nav" href="#" class="btn display--btn">Contact Us</a>
         </form>
       </div>
     </section>
@@ -252,6 +252,7 @@
           <i class="fab fa-twitter"></i>
         </div>
       </div>
+      <i class="fas fa-arrow-up back-to-top" onclick="scrollToTop()"></i>
     </footer>
     <!-- javascript link -->
     <script src="app.js"></script>

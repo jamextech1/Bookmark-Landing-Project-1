@@ -415,6 +415,7 @@ input {
 }
 /* FOOTER SECTION STYLES */
 .footer-section {
+  position: relative;
   padding: 5rem 0;
   background-color: var(--darkblue);
   color: var(--light);
@@ -455,6 +456,18 @@ input {
 .second-col i {
   font-size: 2.5rem;
   transition: 0.25s ease-in-out;
+}
+.back-to-top {
+  position: fixed;
+  color: var(--darkblue);
+  background-color: var(--light);
+  padding: 0.9rem 1rem;
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.8rem;
+  font-size: 2rem;
+  right: 5%;
+  bottom: 8%;
+  cursor: pointer;
 }
 /*  */
 /*  */
