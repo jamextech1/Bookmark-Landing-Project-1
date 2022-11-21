@@ -662,3 +662,8 @@ MEDIA QUERIES BREAKPOINTS TO USE:
     flex-direction: column;
   }
 }
+@media screen and (max-width: 375px) {
+  .hero--btn {
+    flex-direction: column;
+  }
+}
