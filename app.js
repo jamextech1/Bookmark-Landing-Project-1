@@ -29,3 +29,20 @@ btn4.forEach((links) => {
 function scrollToTop() {
   window.scrollTo(0, 0);
 }
+//
+//
+//
+const tabBtns = document.querySelectorAll(".features-second-paragraph p");
+const tabFeatures = document.querySelectorAll(".features-2-col");
+tabBtns.forEach((tabBtn, index) => {
+  tabBtn.addEventListener("click", function () {
+    tabFeatures.forEach((tabFeature) => {
+      tabFeature.classList.remove("active-tab-element");
+    });
+    tabBtns.forEach((tabBtn) => {
+      tabBtn.classList.remove("active-tab");
+    });
+    tabBtns[index].classList.add("active-tab");
+    tabFeatures[index].classList.add("active-tab-element");
+  });
+});

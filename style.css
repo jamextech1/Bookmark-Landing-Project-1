@@ -224,12 +224,16 @@ nav {
   border-bottom: solid 0.25rem var(--softred) !important;
   color: var(--softred);
 }
+.active-tab-element {
+  display: grid !important;
+}
 
 /* features col styles */
 .features-2-col {
   max-width: 80%;
   margin: 0 auto;
   gap: 15rem;
+  display: none;
 }
 .features-h2 {
   font-size: 3.2rem;
